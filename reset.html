@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reset password</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" href="style.css" >
+	
+</head>
+
+<body>
+	
+	<div class="logo">
+		<h1><a href="weza.html"><span style="color: orange">PRINT</span>WEZA</a></h1>
+	</div>
+	<!--
+	<div class="nav">
+		<ul>
+			<span><li><a href="weza.html">HOME</a></li></span>
+			<span><li><a href="#printing">PRINTING</a></li></span>
+			<span><li><a href="#formats">FORMATS</a></li></span>
+			<span><li><a href="#contacts">CONTACTS</a></li></span>
+		</ul>
+	</div>
+	-->
+	<div class="reset">
+		<form onsubmit="return myReset()" action="login.html">
+			<h2>Reset Password</h2>
+			<br>
+			<input type="password" autocomplete="off" autofocus id="o_pass" placeholder="Old password">
+			<br><br>
+			<input type="password" id="pass" placeholder="New password">
+			<br><br>
+			<input type="password" id="c_pass" placeholder="Confirm password">
+			<br><br>
+			<button type="submit">Save</button>
+		
+		</form>
+	</div>
+	
+	<div class="links">
+		<a href="https://www.google.com"><i class='fab fa-google'></i></a>
+		<a href="https://twitter.com/"><i class='fab fa-twitter'></i></a>
+		<a href="https://www.facebook.com/"><i class='fab fa-facebook-f'></i></a>
+	</div>
+
+	<div class="rights">
+		<p>&copy; 2019 Printweza &#8213; All Rights Reserved</p>
+	</div>
+	
+	<script>
+		function myReset(){
+			var oldPassword = document.getElementById("o_pass");
+			
+			var newPassword = document.getElementById("pass");
+			
+			var confirmPassword = document.getElementById("c_pass")
+			
+			if (oldPassword.value.trim() == "" && newPassword.value.trim() == "" && confirmPassword.value.trim() == ""){
+				alert("Fill in the blanks below");
+				return false;
+			}
+			
+			if (oldPassword.value.trim() == ""){
+				alert("Fill in the old password");
+				return false;
+			}
+			
+			if (newPassword.value.trim() == ""){
+				alert("Fill in the new password");
+				return false;
+			}
+			
+			if (confirmPassword.value.trim() == ""){
+				alert("Confirm the password");
+				return false;
+			}
+			
+			if (newPassword.value.trim() !== confirmPassword.value.trim()){
+				alert("Passwords do not match");
+				return false;
+			}
+		}
+	</script>
+	
+</body>
+
+</html>

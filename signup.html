@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" href="style.css" >
+	
+</head>
+	
+<body>
+	
+	<div class="signup">
+		<form onsubmit="return mySign()" action="message.html">
+			<h2>SIGN UP</h2>
+			<input type="text" autocomplete="off" autofocus id="fname" placeholder="Firstname">
+			<br><br>
+			<input type="text" autocomplete="off" id="lname" placeholder="Lastname">
+			<br><br>
+			<input type="email" autocomplete="off" id="email" placeholder="Email">
+			<br><br>
+			<input type="password" id="pass" placeholder="Password">
+			<br><br>
+			<input type="password" id="c_pass" placeholder="Confirm password">
+			<br><br>
+			<button type="submit">Sign Up</button>
+			<br><br>
+			<a href="login.html">Go back to login page</a>
+			<br><br>
+		</form>
+	</div>
+	
+	<div class="links">
+		<a href="https://www.google.com"><i class='fab fa-google'></i></a>
+		<a href="https://twitter.com/"><i class='fab fa-twitter'></i></a>
+		<a href="https://www.facebook.com/"><i class='fab fa-facebook-f'></i></a>
+	</div>
+
+	<div class="rights">
+		<p>&copy; 2019 Printweza &#8213; All Rights Reserved</p>
+	</div>
+	
+	<script>
+	
+		function mySign(){
+			
+			var firstname = document.getElementById("fname");
+			
+			var lastname = document.getElementById("lname");
+			
+			var email = document.getElementById("email");
+			
+			var password = document.getElementById("pass");
+			
+			var confirm = document.getElementById("c_pass");
+			
+			if(firstname.value.trim() == "" && lastname.value.trim() == "" && email.value.trim() == "" && password.value.trim() == "" && confirm.value.trim() == ""){
+			    alert("Fill in the details below");
+				return false;
+			  }
+			
+			if(firstname.value.trim() == ""){
+			   alert("Enter your firstname");
+				return false;
+			}
+			
+			if(lastname.value.trim() == ""){
+			   alert("Enter your lastname");
+				return false;
+			}
+			
+			if(email.value.trim() == ""){
+			   alert("Enter your email");
+				return false;
+			}
+			
+			if(password.value.trim() == ""){
+			   alert("Enter your password");
+				return false;
+			}
+			
+			if(confirm.value.trim() == ""){
+			   alert("Confirm your password");
+				return false;
+			}
+			
+			if(password.value.trim() != confirm.value.trim()){
+			   alert("Passwords do not match");
+				return false;
+			}
+		}
+		
+	</script>
+	
+</body>
+</html>

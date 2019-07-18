@@ -1,0 +1,498 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+/*...........Header code.............*/
+header{
+	background-image: url(book12.jpg);
+	padding: 20px 40px 70px 40px;
+}
+
+.logo{
+	float: left;
+	font-family: Comic Sans MS;
+}
+
+.logo h1{
+	margin: 0;
+	padding: 0 0 0 50px;
+}
+
+.logo a{
+	margin: 0;
+	text-decoration: none;
+}
+
+.nav{
+	float: right;
+	padding-top: 17px;
+	margin-right: 60px;
+}
+
+.nav ul{
+	list-style-type: none;
+	display: inline;
+}
+
+.nav li{
+	display: inline;
+	font-size: 18px;
+	padding: 0 10px 0 10px;
+}
+
+.nav a{
+	color:white;
+}
+
+.nav a:hover{
+	color: orange;
+}
+
+.intro h1{
+	text-align: center;
+	color: #ffffff;
+	font-weight: 200;
+	padding-top: 160px;
+	padding-bottom: 20px;
+}
+
+.intro p{
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.intro button{
+	margin-left: 45%;
+	background-color: orange;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 100px;
+}
+
+.intro button a{
+	color: #ffffff;
+}
+
+/*...........Section 0 code.......*/
+
+.section_0{
+	background-color: blue;
+	text-align: center;
+	padding: 30px;
+}
+
+.help button{
+	background-color: darkslateblue;
+	border: none;
+	padding: 5px 20px 5px 20px;
+	color: #ffffff;
+	border-radius: 20px;
+}
+
+.help button a{
+	text-decoration: none;
+}
+
+.help span{
+	color: #ffffff;
+}
+
+.help a{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/*.........................Section 1......................................*/
+
+.section-1{
+	background-color: #DCDCDC;
+}
+
+.section-1 img{
+	width: 100%;
+	height: 80%;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.section-1 h3{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+.section-1 ol{
+	list-style-type: none;
+}
+
+.section-1 .link{
+	margin-left: 80px;
+	margin-top: 20px;
+	color: gray;
+}
+
+.section-1 a{
+	color: orange;
+	text-decoration: underline;
+}
+
+.list h1{
+	text-align: center;
+	padding-top: 40px;
+	font-weight: 100;
+	padding-bottom: 20px;
+}
+
+.list p{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/*........................Section 2 code........................*/
+
+.section_2{
+	background-color:;
+}
+
+.format{
+	text-align: center;
+}
+
+.format h1{
+	margin-top: 60px;
+	padding-bottom: 30px;
+}
+
+.format p{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.section_2 li{
+	list-style-type: none;
+}
+
+.section_2 img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.section_2 h3{
+	text-align: center;
+	padding: 10px;
+}
+
+.section_2 p{
+	text-align: center;
+	padding: 5px;
+}
+
+.format_1{
+	border: 1px solid grey;
+	padding: 0 0 20px 0;
+	margin-bottom: 150px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+
+/*................Section 3...........................*/
+
+.section_3{
+	background-color: slateblue;
+	text-align: center;
+	padding: 100px;
+}
+
+.section_3 h1{
+	padding-bottom: 30px;
+	color: #ffffff;
+	font-weight: 200;
+}
+
+.section_3 button{
+	background-color: orange;
+	color: #ffffff;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	border-radius: 5px;
+}
+
+.section_3 button a{
+	color: #ffffff;
+}
+
+/*.............Section 4..............*/
+.section_4{
+	background-image: url(book132.jpg);
+	padding: 150px;
+}
+
+.section_4 .para1{
+	color: #ffffff;
+}
+
+.section_4 .para2{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.section_4 input{
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+.section_4 textarea{
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+.section_4 button{
+	background-color: orange;
+	padding: 5px 20px 5px 20px;
+	border: none;
+	border-radius: 5px;
+	
+}
+
+.section_4 button a{
+	color: #ffffff;
+}
+
+/*.........Footer............*/
+
+footer{
+	background-color:floralwhite;
+}
+
+footer p{
+	float: left;
+	padding: 20px;
+	color: gray;
+}
+
+footer i{
+	padding: 15px;
+	margin-top: 5px;
+}
+
+footer a{
+	color: darkgray;
+}
+
+/*............Sign up form ...............*/
+
+.signup{
+	text-align: center;
+	background-image: url(book9.1.jpg);
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+.signup h2{
+	color: #fff;
+	padding: 20px 0 10px 0;
+}
+
+.signup input{
+	width: 250px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.signup button{
+	background-color: orange;
+	color: #fff;
+	padding: 5px 50px 5px 50px;
+	border: none;
+	border-radius: 5px;
+}
+
+.signup a{
+	color: #fff;
+}
+
+/*..........Login form.........*/
+
+.frm{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 90px;
+	background-image: url(book132.jpg)
+}
+
+.frm h2{
+	color: #fff;
+	padding: 30px;
+}
+
+.frm input{
+	width: 250px;
+	border: none;
+	padding: 10px;
+}
+
+.frm button{
+	background-color: orange;
+	padding: 10px 40px 10px 40px;
+	border: none;
+	border-radius: 5px;
+}
+
+.frm p{
+	color: #fff;
+}
+
+.frm a{
+	color: #fff;
+}
+
+/*........Reset form............*/
+
+.reset{
+	text-align: center;
+	background-image: url(book132.jpg);
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+.reset h2{
+	color: #fff;
+}
+
+.reset input{
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+}
+
+.reset button{
+	background-color: orange;
+	padding: 5px 50px 5px 50px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/*.......Forgot form............*/
+
+.forgot{
+	text-align: center;
+	background-image: url(book12.jpg);
+	padding-top: 120px;
+	padding-bottom: 150px;
+}
+
+.forgot h2{
+	color: #fff;
+}
+
+.forgot p{
+	color: yellow;
+}
+
+.forgot input{
+	width: 250px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.forgot button{
+	background-color: orange;
+	padding: 10px 60px 10px 60px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 100px;
+}
+
+/*.........Message form...........*/
+
+.msg{
+	background-image: url(book10.jpg);
+	color: #fff;
+	text-align: center;
+	font-size: 33px;
+	padding-top: 200px;
+	padding-bottom: 300px;
+	
+}
+
+.msg a{
+	color: orange;
+}
+
+.msg_1{
+	text-align: center;
+	background-color: rgba(44,62,80,0.7);
+	color: #fff;
+	font-size: 33px;
+	padding: 40px;
+	margin-top: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 10px;
+}
+
+.msg_1 a{
+	color: orange;
+	text-decoration: underline;
+}
+
+.msg_2{
+	text-align: center;
+	background-color: rgba(44,62,80,0.7);
+	color: #fff;
+	font-size: 33px;
+	padding: 40px;
+	margin-top: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 10px;
+}
+
+.msg_2 a{
+	text-align: center;
+	color: orange;
+	text-decoration: none;
+}
+
+.msg_2 a:hover{
+	text-decoration: underline;
+}
+
+.links {
+	text-align: center;
+}
+
+.links i{
+	padding: 20px;
+}
+
+.rights{
+	text-align: center;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

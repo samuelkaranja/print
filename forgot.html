@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot password</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+	<link rel="stylesheet" href="style.css" >
+	
+</head>
+	
+<body>
+	<div class="forgot">
+		<form onsubmit="return myFunction()" action="reset.html">
+			<h2>Forgot Password</h2>
+			<br>
+			<p>Enter the email that you used to sign up.<br> We will send a link to your email to reset your password.</p>
+			<br>
+			<input type="email" autocomplete="off" autofocus id ="email" placeholder="Email">
+			<br><br>
+			<button type="submit">SEND</button>
+		</form>
+	</div>
+	
+	<div class="links">
+		<a href="https://www.google.com"><i class='fab fa-google'></i></a>
+		<a href="https://twitter.com/"><i class='fab fa-twitter'></i></a>
+		<a href="https://www.facebook.com/"><i class='fab fa-facebook-f'></i></a>
+	</div>
+
+	<div class="rights">
+		<p>&copy; 2019 Printweza &#8213; All Rights Reserved</p>
+	</div>
+	
+	<script>
+		function myFunction(){
+			
+			var email = document.getElementById("email");
+			
+			if(email.value.trim() == ""){
+				alert("Enter email");
+				return false;
+			}
+			
+		}
+	
+	</script>
+</body>
+</html>

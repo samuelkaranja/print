@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Log In</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" href="style.css" >
+	
+</head>
+
+<body>
+	
+	<div class="frm">
+		<form onsubmit="return myLogin()" action="weza.html">
+			<h2>Log In</h2>
+			<input type="text" autocomplete="off" autofocus id="uname" placeholder="Username">
+			<br><br>
+			<input type="password" id="pass" placeholder="Password">
+			<br><br>
+			<button type="submit">LOGIN</button>
+			<br><br>
+			<p><a href="forgot.html">Forgot Password ?</a></p>
+			<br><br><br>
+			<p>Dont have an account ? &nbsp;<a href="signup.html">Sign Up</a></p>
+			<br>
+		</form>
+	</div>
+	
+	<div class="links">
+		<a href="https://www.google.com"><i class='fab fa-google'></i></a>
+		<a href="https://twitter.com/"><i class='fab fa-twitter'></i></a>
+		<a href="https://www.facebook.com/"><i class='fab fa-facebook-f'></i></a>
+	</div>
+
+	<div class="rights">
+		<p>&copy; 2019 Printweza &#8213; All Rights Reserved</p>
+	</div>
+	
+</body>
+	
+<script>
+	function myLogin(){
+		
+		var username = document.getElementById("uname");
+		
+		var password = document.getElementById("pass");
+		
+		if(username.value.trim() == "" && password.value.trim() == ""){
+			alert("Fill in the details below");
+			return false;
+		}
+		
+		if(username.value.trim() == ""){
+			alert("Enter username");
+			return false;
+		}
+		
+		if(password.value.trim() == ""){
+			alert("Enter password");
+			return false;
+		}
+		
+		if (password.value.trim() !== "samuel"){
+			alert("Wrong password");
+			return false;
+		}
+	}
+	
+</script>
+</html>
